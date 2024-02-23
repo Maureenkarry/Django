@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %} Midmorning safari{% endblock %}</title>
+</head>
+<body>
+<header>
+  <h1>{% block header %}Welcome to safarilab{% endblock %}</h1>
+<nav>
+  <ul>
+    <li><a href="{% url 'index' %}">index</a></li>
+    <li><a href="{% url 'about' %}">about</a></li>
+    <li><a href="{% url 'contact' %}">contact</a></li>
+    <li><a href="{% url 'gallery' %}">gallery</a></li>
+  </ul>
+</nav>
+</header>
+<main>
+  {% block content %}{% endblock %}
+</main>
+<footer>
+  <p>&copy;2024 safarilab</p>
+</footer>
+
+</body>
+</html>
